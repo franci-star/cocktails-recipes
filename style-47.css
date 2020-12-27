@@ -29,6 +29,10 @@ body {
     background-color: #ffb3e6 !important;
 }
 
+button:focus {
+    outline: none !important;
+}
+
 .navbar-collapse {
     justify-content: center;
 }
@@ -53,7 +57,8 @@ body {
 }
 
 .welcome {
-    margin-top: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
     font-family: xtitoli;
     display: flex;
     justify-content: center;
@@ -80,7 +85,9 @@ body {
     padding: 35px !important;
     border-radius: 25px !important;
     border-color: transparent !important;
+    color: white !important;
     background-color: #008080 !important;
+    font-size: 35px !important;
     font-family: xtitoli;
 }
 
@@ -99,34 +106,46 @@ body {
     opacity: 0.7 !important;
 }
 
-#cocktailinput {
-    font-size: 35px !important;
-    color: white !important;
-}
-
 .form-group {
     width: 100%;
 }
 
-#selectxcocktail {
-    width: 100%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: 0px 35px;
-    border-radius: 25px;
-    background-color: #008080;
-    color: #b2d9d9;
-    font-size: 35px;
-    font-family: xtitoli;
+.nice-select {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: calc(1.5em + .75rem + 2px) !important;
+    padding: 0px 35px !important;
+    border-radius: 25px !important;
+    background-color: #008080 !important;
+    font-size: 35px !important;
+    font-family: xtitoli !important;
 }
 
-#selectxcocktail:focus {
-    outline: none;
+.current {
+    color: #b2d9d9 !important;
 }
 
-.otheroption {
-    font-size: 15px;
-    background-color:#ff4dc4;
-    color: white;
+.current.changecolor {
+    color: white !important;
+}
+
+.nice-select .list {
+    width: 100% !important;
+    background-color: #ffb3e6 !important;
+}
+
+.nice-select .option {
+    color: white !important;
+    background-color: #ffb3e6 !important;
+}
+
+.nice-select .option:first-child {
+    display: none !important;
+}
+
+.nice-select .option:hover {
+    background-color: #ff4dc4 !important;
 }
 
 .btn {
@@ -172,6 +191,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     color: #ff4dc4;
     font-size: 50px !important;
     font-family: xtitoli;
@@ -262,4 +282,20 @@ h3 {
 .modal-footer {
     justify-content: center !important;
     border-top: none !important;
+}
+
+@media(max-width: 1199px) {
+    
+    #navschermopiccolo {
+    display: flex !important;
+    }
+
+    #navschermopiccolo ul {
+    margin-bottom: 10px !important;
+    }
+
+    #navschermopiccolo li {
+    margin-top: 10px !important;
+    }
+
 }
